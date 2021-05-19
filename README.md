@@ -18,9 +18,7 @@ Assumed that Linux Ubuntu is installed
 
 ## List of not tested elements
 
-Microphone <br>
-Headphone <br>
-Led <br>
+Many elements ;) <br>
 
 ## How to build an images
 
