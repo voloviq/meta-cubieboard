@@ -7,7 +7,7 @@
 Cubieboard 1 (Allwinner A10) <br>
 <br>
 
-![Product View](cubieboard.png) <br>
+![Product View](cubieboard1.png) <br>
 
 ![Product Pinout View](cubieboard-pinout.png) <br>
 
