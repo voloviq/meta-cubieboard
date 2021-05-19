@@ -33,7 +33,6 @@ UTILITIES_INSTALL = " \
     openssh-sftp \
     ppp \
     tzdata \
-    uenv \
 "
 
 WIFI_SUPPORT = " \
