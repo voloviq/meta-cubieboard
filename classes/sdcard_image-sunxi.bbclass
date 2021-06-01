@@ -95,7 +95,6 @@ IMAGE_CMD_sunxi-sdimg () {
 		mcopy -i ${WORKDIR}/boot.img -s ${DEPLOY_DIR_IMAGE}/boot.scr ::boot.scr
 	fi
 
-
 	# Add stamp file
 	echo "${IMAGE_NAME}" > ${WORKDIR}/image-version-info
 	mcopy -i ${WORKDIR}/boot.img -v ${WORKDIR}/image-version-info ::

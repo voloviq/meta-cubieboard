@@ -54,6 +54,8 @@ LORAWAN_SUPPORT = " \
     lora-gateway-dev \
     lora-gateway-staticdev \
     lora-gateway-utils \
+    greengrass \
+    aws-c-io \
 "
 
 IMAGE_INSTALL += " \
