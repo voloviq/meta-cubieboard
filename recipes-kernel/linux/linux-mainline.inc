@@ -1,7 +1,7 @@
 SECTION = "kernel"
 LICENSE = "GPLv2"
 LIC_FILES_CHKSUM = "file://COPYING;md5=bbea815ee2795b2f4230826c0c6b8814"
-COMPATIBLE_MACHINE = "(sun4i|sun5i|sun7i|sun8i|sun50i)"
+COMPATIBLE_MACHINE = "(sun4i)"
 
 inherit kernel
 
@@ -21,12 +21,9 @@ KERNEL_EXTRA_ARGS += "LOADADDR=${UBOOT_ENTRYPOINT}"
 S = "${WORKDIR}/linux-${PV}"
 
 SRC_URI = "https://www.kernel.org/pub/linux/kernel/v5.x/linux-${PV}.tar.xz \
-	file://0003-ARM-dts-nanopi-neo-air-Add-WiFi-eMMC.patch \
-	file://0001-dts-orange-pi-zero-Add-wifi-support.patch \
 	file://defconfig \
 "
 
 SRC_URI_append_use-mailine-graphics = " file://drm.cfg"
-SRC_URI_append_bananapi = " file://axp20x.cfg"
 
 FILES_${KERNEL_PACKAGE_NAME}-base_append = " ${nonarch_base_libdir}/modules/${KERNEL_VERSION}/modules.builtin.modinfo"
