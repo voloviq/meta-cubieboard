@@ -6,6 +6,6 @@ if itest.b *0x28 == 0x02 ; then
 	rootdev=mmcblk1p2
 fi
 setenv bootargs console=${console} console=tty1 root=/dev/nfs rw ip=192.168.0.70 nfsroot=192.168.0.34:/home/mw/nfs/bbb-nfs,v3,tcp
-load mmc 0:1 ${fdt_addr_r} ${fdtfile} || load mmc 0:1 ${fdt_addr_r} boot/${fdtfile}
-load mmc 0:1 ${kernel_addr_r} zImage || load mmc 0:1 ${kernel_addr_r} boot/zImage || load mmc 0:1 ${kernel_addr_r} uImage || load mmc 0:1 ${kernel_addr_r} boot/uImage
+tftp $kernel_addr_r zImage
+tftp $fdt_addr_r sun4i-a10-cubieboard.dtb
 bootz ${kernel_addr_r} - ${fdt_addr_r} || bootm ${kernel_addr_r} - ${fdt_addr_r}

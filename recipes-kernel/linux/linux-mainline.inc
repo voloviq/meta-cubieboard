@@ -21,6 +21,7 @@ KERNEL_EXTRA_ARGS += "LOADADDR=${UBOOT_ENTRYPOINT}"
 S = "${WORKDIR}/linux-${PV}"
 
 SRC_URI = "https://www.kernel.org/pub/linux/kernel/v5.x/linux-${PV}.tar.xz \
+	file://0001-dts-spidev0.0-add.patch \
 	file://defconfig \
 "
 
