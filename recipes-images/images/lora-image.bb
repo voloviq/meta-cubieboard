@@ -33,6 +33,7 @@ UTILITIES_INSTALL = " \
     openssh-sftp \
     ppp \
     tzdata \
+    spidev-test \
 "
 
 WIFI_SUPPORT = " \
