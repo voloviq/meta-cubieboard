@@ -25,7 +25,9 @@ KERNEL_EXTRA_INSTALL = " \
 
 UTILITIES_INSTALL = " \
     coreutils \
+    nano \
     gdbserver \
+    resolvconf \
     mtd-utils \
     ldd \
     libstdc++ \
